@@ -5,6 +5,10 @@
   {{ if (.Site.Params.listmonk) }}
     {{ partial "post/listmonk_email_newsletters.html" . }}
   {{ end }}
+  <p style="font-style: italic;">
+    Have questions or comments? Feel free to reach out to me via
+    <a href="{{ .Site.Params.email_url }}" target="_blank">e-mail</a>.
+  </p>
   {{ partial "post/navigation.html" . }}
   {{ if or (.Site.Params.remark42) (.Site.Config.Services.Disqus.Shortname) }}
     {{ partial "post/comments.html" . }}
