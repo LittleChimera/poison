@@ -1,0 +1,4 @@
+<blockquote class="alert alert-{{ .AlertType }}">
+    <p>{{ .AlertType }}</p>
+    {{ .Text | safeHTML }}
+</blockquote>
